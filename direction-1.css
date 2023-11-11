@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 h1 {
-    font-family: 'Gill Sans';
+    font-family: 'Inknut Antiqua', serif;
     font-size: 20rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
