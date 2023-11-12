@@ -1,7 +1,7 @@
-h1 {
-    font-family: 'Gill Sans';
+
+@media (min-width: 375px) {
+    header, main {
+        padding: 1rem;
+    }
 }
 
-h2 {
-    font-family:'Gill Sans';
-}
