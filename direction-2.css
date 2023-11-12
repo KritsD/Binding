@@ -69,3 +69,12 @@ h1 {
 p, blockquote {
     font-family: 'Work Sans', sans-serif;
 }
+
+em {
+    font-style:italic;
+}
+
+span {
+    text-transform: uppercase;
+    color:rgb(119, 0, 255);
+}
