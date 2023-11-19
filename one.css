@@ -1,0 +1,34 @@
+
+/* General Code*/
+
+@media screen {
+    
+    a:hover {
+        font-style: italic;
+        font-weight:bold;
+        color: blue;
+    }
+
+    ::-moz-selection {
+        color: rgb(255, 255, 255);
+        background: blue;
+    }
+    
+    ::selection {
+        color: rgb(255, 255, 255);
+        background: blue;
+    }
+
+    blockquote:hover {
+        color:blue;
+    }
+
+    h4:hover {
+        color: blue;
+        font-weight: bold;
+    }
+
+    em {
+        text-decoration: underline;
+    }
+}

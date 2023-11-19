@@ -29,7 +29,7 @@
 
     div > p,
     button {
-        font-size: calc(0.9 * var(--typography-base));
+        font-size: calc(1 * var(--typography-base));
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -43,7 +43,6 @@
     main > blockquote {
         display:block;
         max-width: 500px;
-        margin-left: 5%;
     }
 
     main > p:nth-child(1),
@@ -51,29 +50,19 @@
     main > p:nth-child(5),
     main > p:nth-child(7),
     main > p:nth-child(9),
-    main > p:nth-child(11) {
-        display:block;
-        max-width: 500px;
-        padding-top: 2rem;
-        margin-left: 5%;
-        font-family: 'Oranienbaum', serif;
-        font-size: calc(1 * var(--typography-base));
-        line-height: 1.4rem;
-    }
-
+    main > p:nth-child(11),
     main > p:nth-child(2),
     main > p:nth-child(4),
     main > p:nth-child(6),
     main > p:nth-child(8),
     main > p:nth-child(10),
-    main > p:nth-child(12) {
+    main > p:nth-child(12){
         display:block;
         max-width: 500px;
         padding-top: 2rem;
-        margin-left: 10%;
-        font-family: 'Roboto', serif;
-        font-size: calc(1 * var(--typography-base));
-        line-height: 1.4rem;
+        margin-left: 0%;
+        font-size: calc(1.2 * var(--typography-base));
+        line-height: 1.5rem;
     }
 }
 
@@ -97,7 +86,7 @@
     }
 
     p {
-        font-size: calc(0.8 * var(--typography-base));
+        font-size: calc(1.1 * var(--typography-base));
         padding-top: 2rem;
         line-height: 2rem;
     }
@@ -109,7 +98,7 @@
 /* General Code */
 h1 {
     font-family: 'Inknut Antiqua', serif;
-    transform: rotate(-180deg);
+    /*transform: rotate(-180deg);*/
 }
 
 div > p,
@@ -118,9 +107,9 @@ button {
 }
 
 blockquote {
-    font-family: 'Oranienbaum', serif;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 p {
-    font-family: 'Inknut Antiqua', serif;
+    font-family: 'Oranienbaum', serif;
 }

@@ -1,0 +1,19 @@
+a:hover {
+    font-style: italic;
+    font-weight:bold;
+    color:red
+}
+
+::-moz-selection {
+    color: rgb(255, 255, 255);
+    background: red;
+  }
+  
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: red;
+}
+
+blockquote:hover {
+    color: red;
+}
