@@ -15,48 +15,7 @@
 
     nav {
         display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        background: #000;
-        display: inline-block;
-    }
-
-    nav a{
-        color: #fff;
-        font-size: 18px;
-        display: block;
-        padding: 15px;
-        font-family: 'poppins';
-    }
-
-    section{
-        height:100%;
-        width:100%;
-        display:table;
-        pointer-events:none;
-        z-index:0;
-        transition: transform 0.45s cubic-bezier(0,0,0.21,1);
-      }
-    
-    section {
-        display:table-cell;
-        color: black;
-    }
-
-      #two{
-        background:#91684a;
-      }
-
-    a[id="one"]:target ~ #one{
-        transform:translate3d(0,0,0);
-      }
-
-    a[id="two"]:target ~ #two{
-        transform:translate3d(0,-100%,0);
+        justify-content: space-between;
     }
 
     nav > a {
@@ -74,11 +33,6 @@
     h1 {
         font-size: calc(1 * var(--typography-base));
     }
-
-    /*div {
-        display:flex;
-        justify-content: space-between;
-    }*/
 
     blockquote {
         font-size: calc(1 * var(--typography-base));

@@ -21,6 +21,8 @@
 
     blockquote:hover {
         color:blue;
+        font-style: reverse;
+        font-style: italic;
     }
 
     h4:hover {

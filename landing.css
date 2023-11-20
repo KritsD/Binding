@@ -1,0 +1,44 @@
+@media screen {
+    body {
+        padding: 0.4rem;
+    }
+
+    p {
+        margin: 0.5rem;
+        font-family:'Work Sans';
+    }
+
+    div {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 10rem;
+        line-height:6rem;
+        max-width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    nav {
+        font-family: 'DM Sans'
+    }
+
+    #blue:hover {
+        color: blue;
+        font-weight: bold;
+        font-size: calc(1.3 * var(--typography-base));
+    }
+
+    #red:hover {
+        color: red;
+        font-weight: bold;
+        font-size: calc(1.3 * var(--typography-base));
+    }
+
+    #purple:hover {
+        color:rgb(225, 0, 255);
+        font-weight: bold;
+        font-size: calc(1.3 * var(--typography-base));
+    }
+}
