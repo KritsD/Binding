@@ -20,10 +20,6 @@
         padding-bottom: 2rem;
     }
 
-    nav {
-        font-family: 'DM Sans'
-    }
-
     #blue:hover {
         color: blue;
         font-weight: bold;

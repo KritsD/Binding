@@ -16,10 +16,19 @@
     nav {
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        float: left;
+        max-width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        background: rgb(0, 0, 0);
     }
 
     nav > a {
         padding: 0.5rem;
+        font-size: calc(1 * var(--typography-base));
     }
 
     body {
@@ -80,6 +89,11 @@ header > p {
     font-family: 'Work Sans', sans-serif;
     letter-spacing: -0.02rem;
     color: rgb(172, 152, 152);
+}
+
+nav {
+    font-family: 'Work Sans';
+    text-transform: uppercase
 }
 
 h1 {
