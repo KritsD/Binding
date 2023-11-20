@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url("https://use.typekit.net/ril2vdl.css");
 
 :root {
     --typography-base: 1rem;
@@ -13,7 +14,15 @@
 
 @media (min-width: 375px) {
 
-    nav {
+    main {
+        padding-bottom: 3rem;
+    }
+
+    header {
+        padding-top:3rem;
+    }
+
+    .bottom {
         display: flex;
         justify-content: space-between;
         position: fixed;
@@ -22,8 +31,21 @@
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 5;
-        background: rgb(0, 0, 0);
+        z-index: 10;
+        background: white;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        float: left;
+        max-width: 100%;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: white;
     }
 
     nav > a {
@@ -93,7 +115,7 @@ header > p {
 
 nav {
     font-family: 'Work Sans';
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 h1 {
@@ -106,16 +128,16 @@ a {
     color: rgb(172, 152, 152);
 }
 
-.dot {
+/*.dot {
     height: 4px;
     width: 4px;
     background-color: rgb(172, 152, 152);
     border-radius: 50%;
     display: inline-block;
-}
+}*/
 
 blockquote {
-    font-family: 'DM Sans', sans-serif;
+   font-family: 'DM Sans', sans-serif;
     font-weight: bold;
 }
 

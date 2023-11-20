@@ -1,3 +1,12 @@
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
+a, h1, blockquote, p {
+    text-align: center;
+}
+
 a:hover {
     font-style: italic;
     font-weight:bold;
@@ -16,4 +25,7 @@ a:hover {
 
 blockquote:hover {
     color:rgb(225, 0, 255);
+    font-family: "ladislav", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }

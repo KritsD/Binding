@@ -3,38 +3,86 @@
         padding: 0.4rem;
     }
 
+    section {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        float: left;
+        max-width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+
     p {
         margin: 0.5rem;
         font-family:'Work Sans';
     }
 
-    div {
-        display: flex;
-    }
-
     h1 {
-        font-size: 10rem;
-        line-height:6rem;
+        font-size: calc(7 * var(--typography-base));
+        line-height:7rem;
         max-width: 100%;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
     }
 
     #blue:hover {
+        font-family: "ladislav", sans-serif;
+        font-style: italic;
         color: blue;
         font-weight: bold;
-        font-size: calc(1.3 * var(--typography-base));
+        font-size: calc(2 * var(--typography-base));
     }
 
     #red:hover {
+        font-family: "ladislav-reversed", sans-serif;
+        font-style: normal;
         color: red;
         font-weight: bold;
-        font-size: calc(1.3 * var(--typography-base));
+        font-size: calc(2 * var(--typography-base));
     }
 
     #purple:hover {
+        font-family: "ladislav", sans-serif;
+        font-style: normal;
         color:rgb(225, 0, 255);
         font-weight: bold;
-        font-size: calc(1.3 * var(--typography-base));
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    #black:hover {
+        font-family: "ladislav", sans-serif;
+        font-style: normal;
+        color:rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    #author {
+        color: rgb(18, 240, 51);
+    }
+
+    #author:hover {
+        text-decoration:underline;
+    }
+
+    
+}
+
+@media (min-width: 375px) { 
+    h1 {
+        padding-bottom: 5rem;
+        font-size: calc(10 * var(--typography-base));
+        line-height:7rem;
+        max-width: 100%;
+        max-height: 160vh;
+        bottom: 0;
+        margin-top: 0;
+        margin-bottom: 5px;
+        display: flex;
     }
 }
