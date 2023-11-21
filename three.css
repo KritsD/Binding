@@ -4,8 +4,9 @@ body {
 }
 
 a:hover {
-    font-style: italic;
-    font-weight:bold;
+    font-family: "ladislav", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     color: rgb(225, 0, 255);
 }
 
@@ -14,7 +15,7 @@ a:hover {
     background: rgb(225, 0, 255);
   }
   
-  ::selection {
+::selection {
     color: rgb(255, 255, 255);
     background: rgb(225, 0, 255);
 }
@@ -24,4 +25,11 @@ blockquote:hover {
     font-family: "ladislav", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+h4 {
+    font-size: calc(2.5 * var(--typography-base)); 
+    color:rgb(225, 0, 255);
+    font-family: "ladislav", sans-serif;
+    font-weight: 600;
 }

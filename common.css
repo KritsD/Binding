@@ -149,9 +149,8 @@
         font-size: calc(1 * var(--typography-base)); 
     }
 
-    h4:hover {
-        padding: 1rem;
-        font-size: calc(1.3 * var(--typography-base));
+    li {
+        font-size:calc(1.8 * var(--typography-base)); 
     }
 }
 
@@ -219,10 +218,6 @@
         font-size: calc(1 * var(--typography-base)); 
     }
 
-    h4:hover {
-        padding: 1rem;
-        font-size: calc(1 * var(--typography-base));
-    }
 }
 
 /* /////////////SCREEN SIZE 900/////////////////*/
@@ -288,11 +283,6 @@
 
     h3 {
         font-size: calc(1 * var(--typography-base)); 
-    }
-
-    h4:hover {
-        padding: 1rem;
-        font-size: calc(1 * var(--typography-base));
     }
 
 }
@@ -362,4 +352,33 @@ em {
     font-weight: normal;
     font-style: italic;
 }
+
+ol {
+    font-family: "ladislav", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    max-width:250px;
+    margin:auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+li:nth-child(2),
+li:nth-child(4),
+li:nth-child(6),
+li:nth-child(8),
+li:nth-child(10),
+li:nth-child(11),
+li:nth-child(12),
+li:nth-child(14),
+li:nth-child(16),
+li:nth-child(18){
+    font-family: "ladislav-reversed", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(225, 0, 255);
+}
+
 

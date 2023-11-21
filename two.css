@@ -1,33 +1,41 @@
-body {
-    max-width: 500px;
-    float:right;
-}
+/* General Code*/
 
-a:hover {
-    font-family: "ladislav-reversed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-style: italic;
-    font-weight:bold;
-    color:red
-}
+@media screen {
 
-blockquote:hover {
-    font-family: "ladislav-reversed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
+    body {
+        max-width: 500px;
+        margin: left;
+    }
+    
+    a:hover {
+        font-family: "ladislav", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        color: blue;
+    }
 
-::-moz-selection {
-    color: rgb(255, 255, 255);
-    background: red;
-  }
-  
-  ::selection {
-    color: rgb(255, 255, 255);
-    background: red;
-}
+    ::-moz-selection {
+        color: rgb(255, 255, 255);
+        background: blue;
+    }
+    
+    ::selection {
+        color: rgb(255, 255, 255);
+        background: blue;
+    }
 
-blockquote:hover {
-    color: red;
+    blockquote:hover {
+        color:blue;
+        font-family: "ladislav", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    h4 {
+        font-size: calc(2.5 * var(--typography-base)); 
+        color:blue;
+        font-family: "ladislav", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
 }
