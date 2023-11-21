@@ -14,12 +14,30 @@
 
 @media (min-width: 375px) {
 
+    :root {
+        --typography-base: 1rem;
+    
+        --typography-h1: calc(1 * var(--typography-base));
+        --typography-h2: calc(1 * var(--typography-base));
+        --typography-h3: calc(1 * var(--typography-base));
+        --typography-blockquote: calc(1 * var(--typography-base));
+        --typography-p: calc(1 * var(--typography-base));
+    }
+
     main {
         padding-bottom: 3rem;
     }
 
     header {
         padding-top:3rem;
+    }
+
+    #author {
+        color: rgb(0, 0, 0);
+    }
+
+    #author:hover {
+        text-decoration:underline;
     }
 
     .bottom {
@@ -137,19 +155,30 @@
     }
 }
 
-@media (min-width: 900px) {
+/* /////////////SCREEN SIZE 500/////////////////*/
+@media (min-width: 500px) {
+    :root {
+        --typography-base: 1.1rem;
+    
+        --typography-h1: calc(1 * var(--typography-base));
+        --typography-h2: calc(1 * var(--typography-base));
+        --typography-h3: calc(1 * var(--typography-base));
+        --typography-blockquote: calc(1 * var(--typography-base));
+        --typography-p: calc(1 * var(--typography-base));
+    }
+
     nav > a {
-        padding: 0.8rem;
-        font-size: calc(1.2 * var(--typography-base));
+        padding: 0.6rem;
+        font-size: calc(1 * var(--typography-base));
     }
     
     body {
-        padding: 1.4rem;
+        padding: 1.5rem;
     }
 
     header > p, h1 {
-        font-size: calc(1.2 * var(--typography-base));
-        line-height: 1.5rem;
+        font-size: calc(1 * var(--typography-base));
+        line-height: 1.4rem;
     }
 
     h1 {
@@ -157,7 +186,7 @@
     }
 
     blockquote {
-        font-size: calc(1.2 * var(--typography-base));
+        font-size: calc(1 * var(--typography-base));
         display:block;
         max-width: 700px;
     }
@@ -178,7 +207,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.4rem;
+        line-height:1.6rem;
         max-width: 500px;
     }
 
@@ -192,7 +221,78 @@
 
     h4:hover {
         padding: 1rem;
-        font-size: calc(1.3 * var(--typography-base));
+        font-size: calc(1 * var(--typography-base));
+    }
+}
+
+/* /////////////SCREEN SIZE 900/////////////////*/
+
+@media (min-width: 900px) {
+    :root {
+        --typography-base: 1.2rem;
+    
+        --typography-h1: calc(1 * var(--typography-base));
+        --typography-h2: calc(1 * var(--typography-base));
+        --typography-h3: calc(1 * var(--typography-base));
+        --typography-blockquote: calc(1 * var(--typography-base));
+        --typography-p: calc(1 * var(--typography-base));
+    }
+
+    nav > a {
+        padding: 0.8rem;
+        font-size: calc(1 * var(--typography-base));
+    }
+    
+    body {
+        padding: 1.6rem;
+    }
+
+    header > p, h1 {
+        font-size: calc(1 * var(--typography-base));
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        max-width: 900px;
+    }
+
+    blockquote {
+        font-size: calc(1 * var(--typography-base));
+        display:block;
+        max-width: 700px;
+    }
+
+    blockquote:hover {
+        font-size: calc(2.5 * var(--typography-base));;
+        padding: 2.5rem;
+    }
+    
+    div:nth-child(1) blockquote::before {
+        content: '“';
+        margin-left: -0.35em;
+    }
+
+    div:nth-child(1) blockquote::after { content: '”'; }
+
+    main > p {
+        font-size: calc(1 * var(--typography-base)); 
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        line-height:1.7rem;
+        max-width: 500px;
+    }
+
+    h2 {
+        font-size: calc(1 * var(--typography-base));
+    }
+
+    h3 {
+        font-size: calc(1 * var(--typography-base)); 
+    }
+
+    h4:hover {
+        padding: 1rem;
+        font-size: calc(1 * var(--typography-base));
     }
 
 }

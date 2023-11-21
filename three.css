@@ -3,10 +3,6 @@ body {
     margin: auto;
 }
 
-a, h1, blockquote, p {
-    text-align: center;
-}
-
 a:hover {
     font-style: italic;
     font-weight:bold;

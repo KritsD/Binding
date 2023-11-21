@@ -3,11 +3,10 @@ body {
     float:right;
 }
 
-a, h1, blockquote, p {
-    text-align: right;
-}
-
 a:hover {
+    font-family: "ladislav-reversed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-style: italic;
     font-weight:bold;
     color:red

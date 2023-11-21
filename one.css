@@ -9,8 +9,9 @@
     }
     
     a:hover {
+        font-family: "ladislav", sans-serif;
+        font-weight: 600;
         font-style: italic;
-        font-weight:bold;
         color: blue;
     }
 
