@@ -48,6 +48,38 @@
         background: white;
     }
 
+    #blue:hover {
+        font-family: "ladislav", sans-serif;
+        font-style: italic;
+        color: blue;
+        font-weight: bold;
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    #red:hover {
+        font-family: "ladislav-reversed", sans-serif;
+        font-style: normal;
+        color: red;
+        font-weight: bold;
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    #purple:hover {
+        font-family: "ladislav", sans-serif;
+        font-style: normal;
+        color:rgb(225, 0, 255);
+        font-weight: bold;
+        font-size: calc(2 * var(--typography-base));
+    }
+
+    #black:hover {
+        font-family: "ladislav", sans-serif;
+        font-style: normal;
+        color:rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: calc(2 * var(--typography-base));
+    }
+
     nav > a {
         padding: 0.5rem;
         font-size: calc(1 * var(--typography-base));

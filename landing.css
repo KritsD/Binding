@@ -30,7 +30,7 @@
         justify-content: space-between;
     }
 
-    #blue:hover {
+   /* #blue:hover {
         font-family: "ladislav", sans-serif;
         font-style: italic;
         color: blue;
@@ -60,7 +60,7 @@
         color:rgb(0, 0, 0);
         font-weight: bold;
         font-size: calc(2 * var(--typography-base));
-    }
+    }*/
 
     #author {
         color: rgb(18, 240, 51);
