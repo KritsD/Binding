@@ -15,7 +15,7 @@
 @media (min-width: 375px) {
 
     :root {
-        --typography-base: 1.1rem;
+        --typography-base: 1.2rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -159,7 +159,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.5rem;
+        line-height:1.6rem;
     }
 
     h2 {
@@ -178,7 +178,7 @@
 /* /////////////SCREEN SIZE 500/////////////////*/
 @media (min-width: 500px) {
     :root {
-        --typography-base: 1.1rem;
+        --typography-base: 1.3rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -226,7 +226,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.6rem;
+        line-height:1.7rem;
     }
 
     h2 {
@@ -240,6 +240,10 @@
 
 /* /////////////SCREEN SIZE 525/////////////////*/
 @media (min-width:525px) {
+    :root {
+        --typography-base: 1.3rem;
+    }
+
     #black:hover {
         font-size: calc(8 * var(--typography-base));
     }
@@ -250,7 +254,7 @@
 
 @media (min-width: 800px) {
     :root {
-        --typography-base: 1.2rem;
+        --typography-base: 1.4rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -298,7 +302,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.7rem;
+        line-height:1.8rem;
     }
 
     h2 {
@@ -344,18 +348,18 @@ nav {
 
 /* Colour Symphony Bottom Nav Code*/
 .i:hover,
-    .iii:hover,
-    .v:hover,
-    .vii:hover {
-        color: red;
-    }
+.iii:hover,
+.v:hover,
+.vii:hover {
+    color: red;
+}
 
-    .ii:hover,
-    .iv:hover,
-    .vi:hover,
-    .viii:hover {
-        color:blue
-    }
+.ii:hover,
+.iv:hover,
+.vi:hover,
+.viii:hover {
+    color:blue
+}
 
 h1 {
     font-family: 'Work Sans', sans-serif;
@@ -367,11 +371,13 @@ blockquote {
    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     max-width: 500px;
+    letter-spacing: -0.02rem;
 }
 
 main > p {
     font-family: 'DM Sans', sans-serif;
     max-width: 500px;
+    letter-spacing: -0.02rem;
 }
 
 h2 {
