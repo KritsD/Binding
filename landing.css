@@ -3,7 +3,7 @@
         height: 100%;
         position: absolute;
         border: 3px;
-        padding-top: 20%;
+        padding-top: 25%;
         padding-bottom:40%;
         margin: auto;
         text-align: center;
@@ -43,14 +43,14 @@
     
     div > p {
         text-align:center;
-        font-family:'Work Sans';
+        font-family:'Work Sans', sans-serif;
     }
 
     button {
         font-family: 'Work Sans', sans-serif;
         margin: 0;
         position: relative;
-        top: 10%;
+        top: 15%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         color: black;
