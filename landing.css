@@ -5,10 +5,10 @@
         border: 3px;
         padding-top: 20%;
         padding-bottom:40%;
-        margin-left: 1.5rem;
-        margin-right:1.5rem;
+        margin: auto;
         text-align: center;
         padding-bottom: 1rem;
+        width: 100%;
     }
     
     h1 {
@@ -16,6 +16,8 @@
         line-height:2.5rem;
         text-transform: lowercase;
         text-align:center;
+        max-width:100%;
+        margin-right:5%;
     }
     
     div > p {
@@ -27,10 +29,9 @@
         font-family: 'Work Sans', sans-serif;
         margin: 0;
         position: relative;
-        top: 20%;
+        top: 10%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        padding-top: 1rem;
     }
 
     button .designer {
