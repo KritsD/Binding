@@ -1,42 +1,43 @@
+@media screen {
+    
+    h1 {
+        color: red;
+    }
 
-body {
-    max-width: 500px;
-    float:right;
-}
+    a:hover {
+        font-family: "ladislav-reversed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-style: italic;
+        font-weight:bold;
+        color:red
+    }
 
-a:hover {
-    font-family: "ladislav-reversed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-style: italic;
-    font-weight:bold;
-    color:red
-}
+    blockquote:hover {
+        font-family: "ladislav-reversed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
 
-blockquote:hover {
-    font-family: "ladislav-reversed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
+    ::-moz-selection {
+        color: rgb(255, 255, 255);
+        background: red;
+    }
+    
+    ::selection {
+        color: rgb(255, 255, 255);
+        background: red;
+    }
 
-::-moz-selection {
-    color: rgb(255, 255, 255);
-    background: red;
-  }
-  
-  ::selection {
-    color: rgb(255, 255, 255);
-    background: red;
-}
+    blockquote:hover {
+        color: red;
+    }
 
-blockquote:hover {
-    color: red;
-}
-
-h4 {
-    font-size: calc(2.5 * var(--typography-base)); 
-    color:red;
-    font-family: "ladislav-reversed", sans-serif;
-    font-weight: 600;
-    font-style: italic;
+    h4 {
+        font-size: calc(2.5 * var(--typography-base)); 
+        color:red;
+        font-family: "ladislav-reversed", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
 }

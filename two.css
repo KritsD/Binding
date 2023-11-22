@@ -1,12 +1,11 @@
 /* General Code*/
 
 @media screen {
-
-    body {
-        max-width: 500px;
-        margin: left;
-    }
     
+    h1 {
+        color: blue;
+    }
+
     a:hover {
         font-family: "ladislav", sans-serif;
         font-weight: 600;

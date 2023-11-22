@@ -3,7 +3,7 @@
 @import url("https://use.typekit.net/ril2vdl.css");
 
 :root {
-    --typography-base: 1rem;
+    --typography-base: 1.1rem;
 
     --typography-h1: calc(1 * var(--typography-base));
     --typography-h2: calc(1 * var(--typography-base));
@@ -15,7 +15,7 @@
 @media (min-width: 375px) {
 
     :root {
-        --typography-base: 1rem;
+        --typography-base: 1.1rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -25,11 +25,29 @@
     }
 
     main {
+        padding-top: 3rem;
         padding-bottom: 3rem;
+        margin: auto;
     }
 
     header {
         padding-top:3rem;
+    }
+
+    main {
+        float: right;
+        text-align: left;
+        margin-right: 5%;
+        margin-left:5%;
+    }
+
+    header {
+        position: sticky;
+        float: left;
+        text-align: left;
+        margin-right: 5%;
+        margin-left:5%;
+        max-width: 400px;
     }
 
     #author {
@@ -38,19 +56,6 @@
 
     #author:hover {
         text-decoration:underline;
-    }
-
-    .bottom {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        float: left;
-        max-width: 100%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        background: white;
     }
 
     .top {
@@ -66,11 +71,25 @@
         background: white;
     }
 
+    .bottom {
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        position: fixed;
+        max-width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: white;
+    }
+
     #blue:hover {
         font-family: "ladislav", sans-serif;
         font-style: italic;
         color: blue;
         font-weight: bold;
+        text-transform: lowercase;
         font-size: calc(2 * var(--typography-base));
     }
 
@@ -79,7 +98,12 @@
         font-style: normal;
         color: red;
         font-weight: bold;
+        text-transform: lowercase;
         font-size: calc(2 * var(--typography-base));
+    }
+
+    #red.focus {
+         color: red;
     }
 
     #purple:hover {
@@ -87,15 +111,17 @@
         font-style: normal;
         color:rgb(225, 0, 255);
         font-weight: bold;
+        text-transform: lowercase;
         font-size: calc(2 * var(--typography-base));
     }
 
     #black:hover {
         font-family: "ladislav", sans-serif;
         font-style: normal;
-        color:rgb(0, 0, 0);
+        color:rgb(225, 0, 255);
         font-weight: bold;
-        font-size: calc(2 * var(--typography-base));
+        text-transform: lowercase;
+        font-size: calc(5 * var(--typography-base));
     }
 
     nav > a {
@@ -103,9 +129,6 @@
         font-size: calc(1 * var(--typography-base));
     }
 
-    body {
-        padding: 1.2rem;
-    }
 
     header > p {
         font-size: calc(1 * var(--typography-base));
@@ -118,7 +141,6 @@
     blockquote {
         font-size: calc(1 * var(--typography-base));
         display:block;
-        max-width: 500px;
     }
 
     blockquote:hover {
@@ -137,8 +159,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.4rem;
-        max-width: 500px;
+        line-height:1.5rem;
     }
 
     h2 {
@@ -166,15 +187,15 @@
         --typography-p: calc(1 * var(--typography-base));
     }
 
+    body {
+        padding: 1rem;
+    }
+
     nav > a {
         padding: 0.6rem;
         font-size: calc(1 * var(--typography-base));
     }
     
-    body {
-        padding: 1.5rem;
-    }
-
     header > p, h1 {
         font-size: calc(1 * var(--typography-base));
         line-height: 1.4rem;
@@ -187,7 +208,6 @@
     blockquote {
         font-size: calc(1 * var(--typography-base));
         display:block;
-        max-width: 700px;
     }
 
     blockquote:hover {
@@ -207,7 +227,6 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
         line-height:1.6rem;
-        max-width: 500px;
     }
 
     h2 {
@@ -217,12 +236,19 @@
     h3 {
         font-size: calc(1 * var(--typography-base)); 
     }
-
 }
 
-/* /////////////SCREEN SIZE 900/////////////////*/
+/* /////////////SCREEN SIZE 525/////////////////*/
+@media (min-width:525px) {
+    #black:hover {
+        font-size: calc(8 * var(--typography-base));
+    }
+}
 
-@media (min-width: 900px) {
+
+/* /////////////SCREEN SIZE 800/////////////////*/
+
+@media (min-width: 800px) {
     :root {
         --typography-base: 1.2rem;
     
@@ -239,7 +265,7 @@
     }
     
     body {
-        padding: 1.6rem;
+        padding: 1.3rem;
     }
 
     header > p, h1 {
@@ -254,7 +280,6 @@
     blockquote {
         font-size: calc(1 * var(--typography-base));
         display:block;
-        max-width: 700px;
     }
 
     blockquote:hover {
@@ -274,7 +299,6 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
         line-height:1.7rem;
-        max-width: 500px;
     }
 
     h2 {
@@ -285,6 +309,23 @@
         font-size: calc(1 * var(--typography-base)); 
     }
 
+    #black:hover {
+        font-size: calc(9 * var(--typography-base));
+    }
+}
+
+/* /////////////SCREEN SIZE 900/////////////////*/
+@media (min-width:900px) {
+    #black:hover {
+        font-size: calc(10 * var(--typography-base));
+    }
+}
+
+/* /////////////SCREEN SIZE 1000/////////////////*/
+@media (min-width:1000px) {
+    #black:hover {
+        font-size: calc(12 * var(--typography-base));
+    }
 }
 
 
@@ -293,6 +334,7 @@ header > p {
     font-family: 'Work Sans', sans-serif;
     letter-spacing: -0.02rem;
     color: rgb(172, 152, 152);
+    max-width: 500px;
 }
 
 nav {
@@ -300,48 +342,53 @@ nav {
     text-transform: uppercase;
 }
 
+/* Colour Symphony Bottom Nav Code*/
+.i:hover,
+    .iii:hover,
+    .v:hover,
+    .vii:hover {
+        color: red;
+    }
+
+    .ii:hover,
+    .iv:hover,
+    .vi:hover,
+    .viii:hover {
+        color:blue
+    }
+
 h1 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-a {
-    color: rgb(172, 152, 152);
-}
-
-/*.dot {
-    height: 4px;
-    width: 4px;
-    background-color: rgb(172, 152, 152);
-    border-radius: 50%;
-    display: inline-block;
-}*/
-
 blockquote {
    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+    max-width: 500px;
 }
 
 main > p {
     font-family: 'DM Sans', sans-serif;
+    max-width: 500px;
 }
 
 h2 {
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
-    max-width:500px;
+    max-width: 500px;
 }
 
 h3 {
     font-family: 'Work Sans', sans-serif;
-    max-width:500px;
+    max-width: 500px;
 }
 
 h4 {
     font-family: 'DM Sans', sans-serif;
-    max-width:500px;
+    max-width: 500px;
 }
 
 .caption {
@@ -358,7 +405,7 @@ ol {
     text-transform: uppercase;
     font-weight: 600;
     font-style: italic;
-    max-width:250px;
+    max-width:400px;
     margin:auto;
     display: flex;
     text-align: center;
