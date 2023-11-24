@@ -1,12 +1,12 @@
-@media screen {
+@media (min-width:375px) {
     div {
         height: 100%;
         max-width: 100%;
         position: absolute;
-        padding-top: 20%;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-bottom: 20%;
+        padding-top: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
         text-align: center;
         animation: blinking 3s forwards;
     }
@@ -48,7 +48,7 @@
         font-family: 'Work Sans', sans-serif;
         margin: 0;
         position: relative;
-        top: 25%;
+        top: 10%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         color: black;
@@ -73,5 +73,77 @@
 
     #black {
         color: rgb(225, 0, 255);
+    }
+}
+
+@media (min-width:500px) {
+    div {
+        height: 100%;
+        max-width: 100%;
+        position: absolute;
+        padding-top: 40%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20%;
+        text-align: center;
+        animation: blinking 3s forwards;
+    }
+
+    button {
+        font-family: 'Work Sans', sans-serif;
+        margin: 0;
+        position: relative;
+        top: 10%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: black;
+    }
+}
+
+@media (min-width:750px) {
+    div {
+        height: 100%;
+        max-width: 100%;
+        position: absolute;
+        padding-top: 30%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20%;
+        text-align: center;
+        animation: blinking 3s forwards;
+    }
+
+    button {
+        font-family: 'Work Sans', sans-serif;
+        margin: 0;
+        position: relative;
+        top: 25%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: black;
+    }
+}
+
+@media (min-width:962px) {
+    div {
+        height: 100%;
+        max-width: 100%;
+        position: absolute;
+        padding-top: 20%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20%;
+        text-align: center;
+        animation: blinking 3s forwards;
+    }
+
+    button {
+        font-family: 'Work Sans', sans-serif;
+        margin: 0;
+        position: relative;
+        top: 20%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: black;
     }
 }
