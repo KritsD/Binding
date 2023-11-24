@@ -12,6 +12,12 @@
     --typography-p: calc(1 * var(--typography-base));
 }
 
+@media screen {
+    html {
+        padding: 1rem;
+    }
+}
+
 @media (min-width: 375px) {
 
     :root {
@@ -245,6 +251,13 @@
     #black:hover {
         font-size: calc(7 * var(--typography-base));
     }
+
+    main > p {
+        font-size: calc(1 * var(--typography-base)); 
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        line-height:1.7rem;
+    }
 }
 
 
@@ -297,7 +310,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.6rem;
+        line-height:1.7rem;
     }
 
     h2 {
@@ -315,8 +328,26 @@
 
 /* /////////////SCREEN SIZE 900/////////////////*/
 @media (min-width:900px) {
+
+    :root {
+        --typography-base: 1.25rem;
+    
+        --typography-h1: calc(1 * var(--typography-base));
+        --typography-h2: calc(1 * var(--typography-base));
+        --typography-h3: calc(1 * var(--typography-base));
+        --typography-blockquote: calc(1 * var(--typography-base));
+        --typography-p: calc(1 * var(--typography-base));
+    }
+
     #black:hover {
         font-size: calc(10 * var(--typography-base));
+    }
+
+    main > p {
+        font-size: calc(1 * var(--typography-base)); 
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        line-height:1.8rem;
     }
 }
 
