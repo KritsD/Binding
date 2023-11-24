@@ -34,10 +34,30 @@
     }
 
     h4 {
-        font-size: calc(2.5 * var(--typography-base)); 
+        font-size: calc(1.8 * var(--typography-base)); 
         color:red;
         font-family: "ladislav-reversed", sans-serif;
         font-weight: 600;
         font-style: italic;
+        padding: 1.5rem;
+        line-height: calc(2.5 * var(--typography-base));
+    }
+
+    .caption, h2, h3 {
+        color: red;
+    }
+    
+    main > p > a {
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-thickness: 0.8px
+    }
+
+    section > nav > a:nth-child(2) {
+        color: red;
+    }
+
+    hr {
+        border: 0.8px DOTTED red;
     }
 }

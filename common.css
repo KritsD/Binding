@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url("https://use.typekit.net/ril2vdl.css");
 
 :root {
-    --typography-base: 1.1rem;
+    --typography-base: 1rem;
 
     --typography-h1: calc(1 * var(--typography-base));
     --typography-h2: calc(1 * var(--typography-base));
@@ -15,7 +15,7 @@
 @media (min-width: 375px) {
 
     :root {
-        --typography-base: 1.2rem;
+        --typography-base: 1.1rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -26,7 +26,7 @@
 
     main {
         padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-bottom: 6rem;
         margin: auto;
     }
 
@@ -47,7 +47,7 @@
         text-align: left;
         margin-right: 5%;
         margin-left:5%;
-        max-width: 400px;
+        max-width: 450px;
     }
 
     #author {
@@ -67,7 +67,7 @@
         top:0;
         left: 0;
         right: 0;
-        z-index: 10;
+        z-index: 15;
         background: white;
     }
 
@@ -102,8 +102,10 @@
         font-size: calc(2 * var(--typography-base));
     }
 
-    #red.focus {
-         color: red;
+    
+    #red:active {
+        font-family: "ladislav-reversed", sans-serif;
+        color: blue;
     }
 
     #purple:hover {
@@ -159,7 +161,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.6rem;
+        line-height:1.5rem;
     }
 
     h2 {
@@ -178,7 +180,7 @@
 /* /////////////SCREEN SIZE 500/////////////////*/
 @media (min-width: 500px) {
     :root {
-        --typography-base: 1.3rem;
+        --typography-base: 1.2rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -201,10 +203,6 @@
         line-height: 1.4rem;
     }
 
-    h1 {
-        max-width: 900px;
-    }
-
     blockquote {
         font-size: calc(1 * var(--typography-base));
         display:block;
@@ -226,7 +224,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.7rem;
+        line-height:1.6rem;
     }
 
     h2 {
@@ -241,11 +239,11 @@
 /* /////////////SCREEN SIZE 525/////////////////*/
 @media (min-width:525px) {
     :root {
-        --typography-base: 1.3rem;
+        --typography-base: 1.25rem;
     }
 
     #black:hover {
-        font-size: calc(8 * var(--typography-base));
+        font-size: calc(7 * var(--typography-base));
     }
 }
 
@@ -254,7 +252,7 @@
 
 @media (min-width: 800px) {
     :root {
-        --typography-base: 1.4rem;
+        --typography-base: 1.25rem;
     
         --typography-h1: calc(1 * var(--typography-base));
         --typography-h2: calc(1 * var(--typography-base));
@@ -277,10 +275,6 @@
         line-height: 1.5rem;
     }
 
-    h1 {
-        max-width: 900px;
-    }
-
     blockquote {
         font-size: calc(1 * var(--typography-base));
         display:block;
@@ -294,6 +288,7 @@
     div:nth-child(1) blockquote::before {
         content: '“';
         margin-left: -0.35em;
+        line-height:1.8rem;
     }
 
     div:nth-child(1) blockquote::after { content: '”'; }
@@ -302,7 +297,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.8rem;
+        line-height:1.6rem;
     }
 
     h2 {
@@ -363,38 +358,36 @@ nav {
 
 h1 {
     font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
     text-transform: uppercase;
 }
 
 blockquote {
    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
-    max-width: 500px;
-    letter-spacing: -0.02rem;
+    max-width: 550px;
 }
 
 main > p {
     font-family: 'DM Sans', sans-serif;
-    max-width: 500px;
-    letter-spacing: -0.02rem;
+    max-width: 550px;
 }
 
 h2 {
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
-    max-width: 500px;
+    max-width: 550px;
+    text-align: center;
 }
 
 h3 {
     font-family: 'Work Sans', sans-serif;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 h4 {
     font-family: 'DM Sans', sans-serif;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .caption {
@@ -434,4 +427,8 @@ li:nth-child(18){
     color: rgb(225, 0, 255);
 }
 
+.middle {
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
 

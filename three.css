@@ -28,9 +28,30 @@
     }
 
     h4 {
-        font-size: calc(2.5 * var(--typography-base)); 
+        font-size: calc(1.8 * var(--typography-base)); 
         color:rgb(225, 0, 255);
         font-family: "ladislav", sans-serif;
         font-weight: 600;
+        padding: 1.5rem;
+        line-height: calc(2.5 * var(--typography-base));
     }
+
+    section > nav > a:nth-child(3) {
+        color: rgb(225, 0, 255);
+    }
+
+    .caption, h2, h3 {
+        color: rgb(225, 0, 255);
+    }
+    
+    main > p > a {
+        text-decoration: underline;
+        text-decoration-color: rgb(225, 0, 255);
+        text-decoration-thickness: 0.8px
+    }
+
+    hr {
+        border: 0.8px DOTTED rgb(225, 0, 255);
+    }
+
 }

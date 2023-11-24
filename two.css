@@ -30,11 +30,32 @@
         font-style: italic;
     }
 
+    h2 {
+        color: blue;
+    }
+
     h4 {
-        font-size: calc(2.5 * var(--typography-base)); 
+        font-size: calc(1.8 * var(--typography-base)); 
         color:blue;
         font-family: "ladislav", sans-serif;
         font-weight: 600;
         font-style: italic;
+        padding: 1.5rem;
+        line-height: calc(2.5 * var(--typography-base));
     }
+
+    main > p > a {
+        text-decoration: underline;
+        text-decoration-color: blue;
+        text-decoration-thickness: 0.8px
+    }
+
+    hr {
+        border: 0.8px DOTTED blue;
+    }
+
+    section > nav > a:nth-child(1) {
+        color: blue;
+    }
+
 }
