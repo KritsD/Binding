@@ -234,7 +234,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.7rem;
+        line-height:1.8rem;
     }
 
     h2 {
@@ -260,7 +260,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.75rem;
+        line-height:1.8rem;
     }
 }
 
@@ -295,7 +295,7 @@
     blockquote {
         font-size: calc(1 * var(--typography-base));
         display:block;
-        line-height: 1.8rem;
+        line-height: 1.85rem;
     }
 
     blockquote:hover {
@@ -315,7 +315,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:1.8rem;
+        line-height:1.85rem;
     }
 
     h2 {
@@ -349,7 +349,7 @@
     }
 
     blockquote {
-        line-height: 2rem;
+        line-height: 2.1rem;
     }
 
     blockquote:hover {
@@ -360,7 +360,7 @@
         font-size: calc(1 * var(--typography-base)); 
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        line-height:2rem;
+        line-height:2.1rem;
     }
 }
 
