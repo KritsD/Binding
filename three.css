@@ -1,4 +1,5 @@
 @media screen {
+
     h1 {
         color:rgb(225, 0, 255);
     }
@@ -53,5 +54,4 @@
     hr {
         border: 0.8px DOTTED rgb(225, 0, 255);
     }
-
 }
