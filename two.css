@@ -1,12 +1,6 @@
 /* General Code*/
 
-@media screen {
-
-    header {
-        position: fixed;
-        width: 50%;
-    }
-    
+@media screen {    
     h1 {
         color: blue;
     }
